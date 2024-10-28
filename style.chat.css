@@ -28,7 +28,7 @@
   }
 
   .logo_pic {
-    width: 70%;
+    /* width: 70%; */
     min-width: 300px;
   }
 
@@ -128,9 +128,9 @@
     height: 20vh;
   }
 
-  .logo_pic {
+  /* .logo_pic {
     width: 90%;
-  }
+  } */
 
   .moto {
     font-size: 1.2rem;
