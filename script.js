@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const targetElement = document.querySelector(targetId); // Vybereme cílový prvek
 
       if (targetElement) {
+        // Plynulé scrollování
         targetElement.scrollIntoView({
           behavior: 'smooth', // Plynulé scrollování
           block: 'start', // Zarovnat k začátku sekce
