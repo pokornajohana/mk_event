@@ -1,3 +1,4 @@
+/* Základní stylování */
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -102,10 +103,21 @@ h3 {
   max-width: 1300px;
 }
 
+/* Agenda container with horizontal scrolling */
+.agenda-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 20px;
+  margin: 20px;
+}
+
 #agenda_sec {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
 }
 
 .agenda_card {
@@ -113,19 +125,16 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   background-color: white;
   border-radius: 25px;
   margin: 20px;
   padding: 25px 60px;
   color: #916E4F;
-  width: 5%;
   min-width: 150px;
   max-width: 300px;
   text-align: center;
   font-size: 1.3rem;
   cursor: pointer;
-  flex: 1 1 200px;
 }
 
 .agenda {
@@ -147,128 +156,88 @@ h3 {
   flex-direction: column;
 }
 
-.agenda_desc {
-  font-size: 1.7rem;
-  text-align: center;
-  width: 60%;
-}
-
-.agenda_detail {
-  display: flex;
-  flex-direction: column;
-  margin: 50px;
-  text-align: center;
-  align-items: center;
-}
-
-.agenda_name {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.about_us {
-  display: flex;
-  background-color: rgb(248, 247, 246);
-  padding: 80px 150px;
-  flex-direction: row;
-  font-size: 2.5rem;
-  margin-top: 50px;
-}
-
-.info_about_us {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 40%;
-}
-
-.us_pic {
-  width: 400px;
-  margin: 20px;
-  align-self: center;
-  border-radius: 20px;
-}
-
-.text {
-  font-size: 1.5rem;
-}
-
-#contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.7rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 90%;
-  font-size: 2.5rem;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #9B7E64;
+/* Arrow buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: #916E4F;
   color: white;
-  border-radius: 10px;
-  padding: 50px;
-}
-
-.col {
-  width: 100%;
-}
-
-.form-control {
-  border-radius: 5px;
   border: none;
-  margin-top: 30px;
-  padding-left: 30px;
-  width: 100%;
-  height: 60px;
-  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.message {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.arrow-left {
+  left: 10px;
 }
 
-textarea {
-  padding-left: 30px;
-  padding-top: 30px;
-  width: 100%;
-  min-height: 60%;
-  border-radius: 5px;
-  border: none;
-  margin-top: 30px;
-  font-size: 1.5rem;
+.arrow-right {
+  right: 10px;
 }
 
-.form-row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 300px;
-  width: 100%;
+/* Responzivní stylování */
+@media (max-width: 1200px) {
+  .moto {
+    width: 80%;
+  }
+
+  .about_us {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .info_about_us {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
-.btn {
-  background-color: #E3DCD6;
-  color: #916E4F;
-  border-radius: 5px;
-  border: none;
-  height: 60px;
-  width: 70%;
-  margin-top: 30px;
-  font-size: 1.5rem;
+@media (max-width: 768px) {
+  nav {
+    padding-right: 10px;
+  }
+
+  .actions {
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .agenda_card {
+    max-width: 100%;
+    min-width: 100px;
+    padding: 20px;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+  }
+
+  .agenda_pic {
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .moto {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .about_us {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+
+  .agenda_card {
+    font-size: 1rem;
+    padding: 15px;
+  }
 }

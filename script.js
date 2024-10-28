@@ -93,3 +93,17 @@ document.addEventListener('DOMContentLoaded', function () {
     link.addEventListener('click', scrollToAnchor);
   });
 });
+
+function scrollLeft() {
+  document.getElementById('agenda_sec').scrollBy({
+    left: -300,
+    behavior: 'smooth',
+  });
+}
+
+function scrollRight() {
+  document.getElementById('agenda_sec').scrollBy({
+    left: 300,
+    behavior: 'smooth',
+  });
+}
