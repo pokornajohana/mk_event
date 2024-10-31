@@ -11,7 +11,10 @@ h1 {
 }
 
 main {
-  margin: 30px;
+  /* margin: 30px; */
+  /* max-width: 970px;
+  min-width: 380px; */
+
 }
 
 a {
@@ -25,7 +28,7 @@ nav {
   align-items: center;
   background-color: white;
   height: 80px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 ol {
@@ -52,7 +55,6 @@ ul {
 section {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 
 .actions {
@@ -99,8 +101,8 @@ h3 {
 }
 
 .logo_pic {
-  width: 80%;
-  min-width: 700px;
+  width: 30%;
+  min-width: 500px;
   max-width: 1300px;
   color: #916E4F
 }
@@ -138,6 +140,9 @@ h3 {
 .agenda_details {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  background-color: #E3DCD6;
+  width: 90%;
 }
 
 .agenda_desc {
@@ -161,18 +166,17 @@ h3 {
 
 .about_us {
   display: flex;
+  flex-direction: column;
   background-color: rgb(248, 247, 246);
-  padding: 80px 150px;
-  flex-direction: row;
+  padding: 80px 10px;
   font-size: 2.5rem;
   margin-top: 50px;
 }
 
 .info_about_us {
-  display: flex;
-  flex-direction: column;
   height: 100%;
-  width: 40%;
+  width: 90%;
+  text-align: center;
 }
 
 .us_pic {
@@ -194,16 +198,6 @@ h3 {
   font-size: 2.7rem;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  height: 90%;
-  font-size: 2.5rem;
-}
-
 .form {
   display: flex;
   flex-direction: column;
@@ -213,7 +207,7 @@ form {
   background-color: #9B7E64;
   color: white;
   border-radius: 10px;
-  padding: 50px;
+  padding-top: 50px;
 }
 
 .form-control {
@@ -306,13 +300,13 @@ textarea {
   }
 
   #agenda_sec {
-    justify-content: start;
+    justify-content: center;
   }
 
   .agenda_card {
     padding: 20px;
     margin: 10px;
-    max-width: 40%;
+    max-width: 35%;
     height: 200px;
     /* min-height: 10%; */
     /* min-width: 230px; */
