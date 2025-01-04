@@ -167,7 +167,7 @@ h3 {
 .agenda_detail {
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  margin: 30px;
   text-align: center;
   align-items: center;
 }
@@ -318,12 +318,12 @@ textarea {
     font-size: 1.9rem;
     width: 100%;
     padding: 10px;
-
+    margin: 20px 0px
   }
 
   .actions {
     flex-direction: column;
-    padding: 20px;
+    /* padding: 20px; */
   }
 
   #agenda_sec {
@@ -345,7 +345,7 @@ textarea {
   }
 
   .agenda_details {
-    width: 100%;
+    width: 90%;
   }
 
   .agenda_desc {
@@ -359,7 +359,7 @@ textarea {
 
   .about_us {
     flex-direction: column;
-    padding: 50px;
+    margin: 20px;
     text-align: center;
   }
 
@@ -373,8 +373,8 @@ textarea {
   }
 
   .form {
-    width: 100%;
-    padding: 40px;
+    width: 80%;
+    /* padding: 40px; */
   }
 
   form {
@@ -398,7 +398,6 @@ textarea {
   }
 
   nav {
-    flex-direction: column;
     height: auto;
   }
 
