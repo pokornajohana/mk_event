@@ -11,6 +11,10 @@ h1 {
   font-family: 'Espoir', sans-serif;
 }
 
+h3 {
+  text-transform: uppercase;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -334,7 +338,8 @@ textarea {
   .agenda_card {
     padding: 20px;
     margin: 10px;
-    max-width: 35%;
+    /* min-width: 35%; */
+    min-width: 35%;
     height: 200px;
     /* min-height: 10%; */
     /* min-width: 230px; */
