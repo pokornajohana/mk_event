@@ -93,9 +93,9 @@ li {
 .logo {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: center;
   font-size: 40px;
-  height: 40vh;
+  /* height: 40vh; */
 }
 
 .moto {
@@ -105,17 +105,17 @@ li {
   line-height: 1.5;
   /* width: 1000px; */
   padding: 20px;
-  margin-left: 40px;
+  margin-left: 30px;
   color: #916E4F;
 }
 
 .logo_pic {
   width: 45%;
   /* min-width: 500px; */
-  width: 600px;
+  /* width: 600px; */
   max-width: 300px;
-  color: #916E4F;
-  /* margin-left: 15%; */
+  /* color: #916E4F; */
+  padding: 20px;
 }
 
 #agenda_sec {
