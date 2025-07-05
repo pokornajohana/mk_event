@@ -23,6 +23,7 @@ let animationFrame;
 
 // Přidání event listenerů pro zastavení a obnovení posunu
 agendaCards.forEach((card) => {
+  console.log('funguje');
   card.addEventListener('mouseenter', () => {
     console.log('kurzor na prvku');
     isPaused = true;
